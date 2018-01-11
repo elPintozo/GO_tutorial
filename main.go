@@ -41,4 +41,41 @@ func main(){
 	fmt.Println(variable_1)
 	fmt.Println("El valor de la variable_1 es de: "+variable_2)
 	fmt.Println(variable_3+1)
+
+	///---------------------------------
+	//--- 5 --- Ciclo
+	//----------------------------------
+	fmt.Println("-- Salida de la unidad 5 --")
+	fmt.Println("-- For tipo 1:")
+	for variable_4:=0 ; variable_4<10 ; variable_4++ {
+		fmt.Printf("valor de variable_4 :%d\n",variable_4)
+	}
+	fmt.Println("-- For tipo 2:")
+	variable_5 := 0
+	for variable_5<10{
+		fmt.Printf("valor de variable_5 :%d\n",variable_5)
+		variable_5++
+	}
+	fmt.Println("-- For tipo 3:")
+	variable_6 := 0
+	for {
+		fmt.Printf("valor de variable_6 :%d\n",variable_6)
+		variable_6++
+		if variable_6 > 10{
+			break
+		}
+	}
+	fmt.Println("-- For tipo 4:")
+	variable_7 := 0
+	for {
+		if variable_7 == 3{
+			variable_7++
+			continue //corta el for hasta aca, y lo reinicia conservando el valor de variable_7
+		}
+		fmt.Printf("valor de variable_7 :%d\n",variable_7)
+		variable_7++
+		if variable_7 > 10{
+			break
+		}
+	}
 }
